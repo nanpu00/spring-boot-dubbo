@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: dubbo-provide
+dubbo:
+  application:
+    name: dubbo-provide
+    id: dubbo-provide
+  registry:
+    address: nacos://127.0.0.1:8848
+    register-mode: instance
+  scan:
+    base-packages: priv.nanpu.dubboprovide.service
+server:
+  port: 9988

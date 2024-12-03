@@ -1,0 +1,14 @@
+#spring.application.name=dubbo-consumer
+
+server:
+  port: 9000
+spring:
+  application:
+    name: dubbo-provide
+dubbo:
+  application:
+    id: dubbo-consumer
+    name: dubbo-consumer
+  registry:
+    address: nacos://127.0.0.1:8848
+
